@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */; };
+		0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */; };
+		0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */; };
 		09E251FD2C7D32110002D651 /* UIKitTutorial1.UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E251FC2C7D32110002D651 /* UIKitTutorial1.UIView.swift */; };
 		09E251FF2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E251FE2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift */; };
 		09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E252002C7D38440002D651 /* UIKitTutorial1.UIImageView.swift */; };
-		09E252032C7D3B470002D651 /* UIKitTutorial1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E252022C7D3B470002D651 /* UIKitTutorial1.swift */; };
+		09E252032C7D3B470002D651 /* UIKitTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E252022C7D3B470002D651 /* UIKitTutorial.swift */; };
 		09E252052C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E252042C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift */; };
 		42EC93722C756A2100738735 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC93712C756A2100738735 /* AppDelegate.swift */; };
 		42EC93742C756A2100738735 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EC93732C756A2100738735 /* SceneDelegate.swift */; };
@@ -22,10 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UILabel.swift; sourceTree = "<group>"; };
+		0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextView.swift; sourceTree = "<group>"; };
+		0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextField.swift; sourceTree = "<group>"; };
 		09E251FC2C7D32110002D651 /* UIKitTutorial1.UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIView.swift; sourceTree = "<group>"; };
 		09E251FE2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIScrollView.swift; sourceTree = "<group>"; };
 		09E252002C7D38440002D651 /* UIKitTutorial1.UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIImageView.swift; sourceTree = "<group>"; };
-		09E252022C7D3B470002D651 /* UIKitTutorial1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.swift; sourceTree = "<group>"; };
+		09E252022C7D3B470002D651 /* UIKitTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial.swift; sourceTree = "<group>"; };
 		09E252042C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIStackView.swift; sourceTree = "<group>"; };
 		281F8B19D0EA5094683C3CE3 /* Pods-Test_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test_1.debug.xcconfig"; path = "Target Support Files/Pods-Test_1/Pods-Test_1.debug.xcconfig"; sourceTree = "<group>"; };
 		42EC936E2C756A2100738735 /* Test_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,11 +61,14 @@
 		09E252062C7D45CF0002D651 /* UIKit.Hints */ = {
 			isa = PBXGroup;
 			children = (
-				09E252022C7D3B470002D651 /* UIKitTutorial1.swift */,
+				09E252022C7D3B470002D651 /* UIKitTutorial.swift */,
 				09E251FC2C7D32110002D651 /* UIKitTutorial1.UIView.swift */,
 				09E252002C7D38440002D651 /* UIKitTutorial1.UIImageView.swift */,
 				09E252042C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift */,
 				09E251FE2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift */,
+				0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */,
+				0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */,
+				0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */,
 			);
 			path = UIKit.Hints;
 			sourceTree = "<group>";
@@ -234,11 +243,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				42EC93762C756A2100738735 /* ViewController.swift in Sources */,
-				09E252032C7D3B470002D651 /* UIKitTutorial1.swift in Sources */,
+				0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */,
+				09E252032C7D3B470002D651 /* UIKitTutorial.swift in Sources */,
 				42EC93722C756A2100738735 /* AppDelegate.swift in Sources */,
+				0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */,
 				09E251FD2C7D32110002D651 /* UIKitTutorial1.UIView.swift in Sources */,
 				09E251FF2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift in Sources */,
 				09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */,
+				0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */,
 				09E252052C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift in Sources */,
 				42EC93742C756A2100738735 /* SceneDelegate.swift in Sources */,
 			);

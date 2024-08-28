@@ -24,9 +24,9 @@ class UIKitTutorial1StackView : UIStackView{
         backgroundColor = .white
         
         self.axis = .vertical
-        self.spacing = 8
+        self.spacing = 30
         self.distribution = .fillProportionally
-        self.alignment = .center
+        self.alignment = .leading
 
         for _ in 1...50 {
             let imageView = UIKitTutorial1ImageView()

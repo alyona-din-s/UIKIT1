@@ -12,6 +12,7 @@ import SnapKit
 class UIKitTutorial1View: UIView{
  
     var subViewRect: UIView!
+    var label: UILabel!
  
     override init(frame: CGRect) {
         super.init(frame: frame)

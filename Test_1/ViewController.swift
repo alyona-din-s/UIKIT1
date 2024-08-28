@@ -32,8 +32,14 @@ class ViewController: UIViewController {
         self.view.addSubview(viewBottom)
         viewBottom.addSubview(viewController.view)
                 
+        
+        let vc = UIKitTutorial1VC()
+        navigationController?.pushViewController(vc, animated: true)
+        navigationController?.popViewController(animated: true)
+        navigationController?.popToRootViewController(animated: true)
+        
 
-//        getData()
+        //        getData()
 //         Do any additional setup after loading the view.
     }
     

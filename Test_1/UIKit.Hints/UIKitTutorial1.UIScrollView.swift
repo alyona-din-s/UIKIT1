@@ -8,7 +8,7 @@
 import UIKit
 import SnapKit
 
-class UIKitTutorial1ScrollView : UIScrollView, UIScrollViewDelegate{
+class UIKitTutorial1ScrollView: UIScrollView, UIScrollViewDelegate{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,6 +29,7 @@ class UIKitTutorial1ScrollView : UIScrollView, UIScrollViewDelegate{
         let fg = self.frameLayoutGuide
 
         // Standart NSLayoutConstraint
+        
 //        stackView.translatesAutoresizingMaskIntoConstraints = false
 //        NSLayoutConstraint.activate([
 //            stackView.topAnchor.constraint(equalTo: cg.topAnchor, constant: 12.0),

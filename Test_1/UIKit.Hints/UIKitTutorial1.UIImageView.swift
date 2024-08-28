@@ -12,6 +12,7 @@ class UIKitTutorial1ImageView: UIImageView {
     
     init() {
         let image = UIImage(systemName: "star.leadinghalf.filled")
+//        let image = UIImage(named: "img1")
         super.init(image: image)
         customInit()
     }
