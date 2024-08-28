@@ -34,5 +34,5 @@ class UIKitTutorial1ImageView: UIImageView {
         self.layer.shadowRadius = 2
         self.backgroundColor = .green
      }
-    
+  
 }

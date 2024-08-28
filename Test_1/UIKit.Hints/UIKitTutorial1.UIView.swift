@@ -100,9 +100,11 @@ class UIKitTutorial1View: UIView{
     
     private func drawCustomContent() {
         // Perform custom drawing here
+        drawRect(startColor: .yellow, endColor: .orange)
+
     }
-    
-    
+     
+ 
     //MATK: - Samples
      
     
@@ -124,6 +126,26 @@ class UIKitTutorial1View: UIView{
         }, completion: { (finished) -> Void in
             self.layer.opacity = 1
         })
+    }
+    
+    func drawRect(startColor : UIColor, endColor: UIColor){
+        
+        let context = UIGraphicsGetCurrentContext()!
+        let colors = [startColor.cgColor, endColor.cgColor]
+        
+        let colorSpace = CGColorSpaceCreateDeviceRGB()
+        let colorLocations: [CGFloat] = [0.0, 1.0]
+        
+        let gradient = CGGradient(colorsSpace: colorSpace,
+                                  colors: colors as CFArray,
+                                  locations: colorLocations)!
+        
+        let startPoint = CGPoint(x: 0, y: bounds.height)
+        let endPoint = CGPoint(x: bounds.width, y: 0)
+        context.drawLinearGradient(gradient,
+                                   start: startPoint,
+                                   end: endPoint,
+                                   options: [CGGradientDrawingOptions(rawValue: 0)])
     }
     
     @objc

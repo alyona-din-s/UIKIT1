@@ -33,11 +33,11 @@ class ViewController: UIViewController {
         viewBottom.addSubview(viewController.view)
                 
         
-        let vc = UIKitTutorial1VC()
-        navigationController?.pushViewController(vc, animated: true)
-        navigationController?.popViewController(animated: true)
-        navigationController?.popToRootViewController(animated: true)
-        
+        let vc = UIKitTutorialVC()
+//        navigationController?.pushViewController(vc, animated: true)
+//        navigationController?.popViewController(animated: true)
+//        navigationController?.popToRootViewController(animated: true)
+//        
 
         //        getData()
 //         Do any additional setup after loading the view.
@@ -91,6 +91,15 @@ class ViewController: UIViewController {
 
 }
 
+
+class CustomViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor.purple
+    }
+}
+
+
 struct Location: Codable {
     let name: String
     let region: String
@@ -111,11 +120,17 @@ struct WeatherData: Codable {
     let location: Location
     let current: Current
 }
+ 
 
-class CustomViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor.purple
+struct Info {
+    var name: String
+    var temperature : Double
+    
+    static func createSampleList() -> [Info] {
+        return [
+            Info(name: "Moscow", temperature: 20.4),
+            Info(name: "New York", temperature: 25.4),
+        ]
     }
 }
 
