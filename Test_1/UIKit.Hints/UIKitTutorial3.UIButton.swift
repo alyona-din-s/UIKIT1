@@ -10,9 +10,11 @@ import UIKit
 
 class UIKitTutorial3Button: UIButton {
       
-    
-    init() {
+    weak var delegate: UIKitTutorialVC?
+ 
+    init(delegate: UIKitTutorialVC?) {
         super.init(frame: .zero)
+        self.delegate = delegate
         customInit()
     }
     
@@ -22,10 +24,12 @@ class UIKitTutorial3Button: UIButton {
     
     func customInit(){
         self.frame = CGRect(x: 0, y: 0, width: 80, height: 40)
-        self.setTitle("Button", for: .normal)
-        self.backgroundColor = .black
+        self.setTitle("Next", for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: 20, weight: .bold)
-        self.addTarget(self, action: #selector(onButtonTap), for: .touchUpInside)
+        self.backgroundColor = .black
+        
+        guard let delegate = delegate else { return }
+        self.addTarget(delegate, action: #selector(UIKitTutorialVC.onNextViewController), for: .touchUpInside)
     }
 
     @objc

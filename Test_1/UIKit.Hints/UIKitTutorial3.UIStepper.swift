@@ -27,6 +27,7 @@ class UIKitTutorial3Stepper: UIStepper {
        self.minimumValue = 0
        self.maximumValue = 10
        self.value = 5
+       self.stepValue = 0.5
        label?.text = String(self.value)
        self.addTarget(self, action: #selector(switchValueDidChange), for: .valueChanged)
     }

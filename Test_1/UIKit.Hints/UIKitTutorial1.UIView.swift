@@ -140,7 +140,7 @@ class UIKitTutorial1View: UIView{
                                   colors: colors as CFArray,
                                   locations: colorLocations)!
         
-        let startPoint = CGPoint(x: 0, y: bounds.height)
+        let startPoint = CGPoint(x: 0, y: 0)
         let endPoint = CGPoint(x: bounds.width, y: 0)
         context.drawLinearGradient(gradient,
                                    start: startPoint,

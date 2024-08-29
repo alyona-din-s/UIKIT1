@@ -11,18 +11,24 @@ import UIKit
 import SnapKit
  
 class UIKitTutorialVC: UIViewController{
-     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        view.backgroundColor = .white
-
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         addMySubviews4Tutorial3()
     }
+    
+    deinit {
+        print("deinit")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = .white
+
+    }
+
  
    func addMySubviews4Tutorial1(){
         
@@ -68,8 +74,12 @@ class UIKitTutorialVC: UIViewController{
             make.width.equalTo(100)
             make.height.equalTo(4)
         }
-        let button = UIKitTutorial3Button()
-        button.addTarget(self, action: #selector(onNextViewController), for: .touchUpInside)
+        var button = UIKitTutorial3Button(delegate: self)
+//        button.addTarget(self, action: #selector(onNextViewController), for: .touchUpInside)
+        button.snp.makeConstraints { make in
+            make.width.equalTo(90)
+            make.height.equalTo(40)
+        }
         let labelForSlider = UIKitTutorial2Label()
         let slider = UIKitTutorial3Slider(label: labelForSlider)
         slider.snp.makeConstraints { make in
@@ -89,20 +99,20 @@ class UIKitTutorialVC: UIViewController{
   
         // Sample standart constraints
 
-//        stackView.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
-//            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
-//            stackView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
-//        ])
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+            stackView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
+        ])
         
         // Sample SnapKit constraints
 
-        stackView.snp.makeConstraints { make in
-            make.top.equalTo(view.safeAreaLayoutGuide).offset(12)
-            make.centerX.equalTo(view)
-            make.height.equalTo(view).multipliedBy(0.5)
-        }
+//        stackView.snp.makeConstraints { make in
+//            make.top.equalTo(view.safeAreaLayoutGuide).offset(12)
+//            make.centerX.equalTo(view)
+//            make.height.equalTo(view).multipliedBy(0.5)
+//        }
         
     }
      
