@@ -16,7 +16,7 @@ class UIKitTutorialVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addMySubviews4Tutorial3()
+        addMySubviews4Tutorial4()
     }
     
     deinit {
@@ -74,7 +74,7 @@ class UIKitTutorialVC: UIViewController{
             make.width.equalTo(100)
             make.height.equalTo(4)
         }
-        var button = UIKitTutorial3Button(delegate: self)
+        let button = UIKitTutorial3Button(delegate: self)
 //        button.addTarget(self, action: #selector(onNextViewController), for: .touchUpInside)
         button.snp.makeConstraints { make in
             make.width.equalTo(90)
@@ -121,4 +121,80 @@ class UIKitTutorialVC: UIViewController{
         let nc = navigationController as? UIKitTutorialNavigation
         nc?.openNewSearchView()
     }
+ 
+    @objc
+    func onWebViewController(){
+        let nc = navigationController as? UIKitTutorialNavigation
+        nc?.openNewWebView()
+    }
+ 
+    func addMySubviews4Tutorial4(){
+ 
+        let buttonforWebView = UIKitTutorial3Button()
+        buttonforWebView.setTitle("WebView", for: .normal)
+        buttonforWebView.addTarget(self, action: #selector(onWebViewController), for: .touchUpInside)
+
+        let buttonforSearchView = UIKitTutorial3Button()
+        buttonforSearchView.setTitle("SearchView", for: .normal)
+        buttonforSearchView.addTarget(self, action: #selector(onNextViewController), for: .touchUpInside)
+
+        let button = UIKitTutorial3Button()
+        button.setTitle("addSomeView", for: .normal)
+        button.addTarget(self, action: #selector(onAddSubView), for: .touchUpInside)
+        button.snp.makeConstraints { make in
+            make.height.equalTo(40)
+        }
+        
+        let labelForPickerView = UIKitTutorial2Label()
+        labelForPickerView.text = "Date label"
+        labelForPickerView.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(40)
+        }
+        let pickerView = UIKitTutorial4PickerView(label: labelForPickerView)
+        pickerView.snp.makeConstraints { make in
+            make.height.equalTo(100)
+        }
+        
+        let labelForDatePicker = UIKitTutorial2Label()
+        labelForDatePicker.text = "DatePicker"
+        labelForDatePicker.snp.makeConstraints { make in
+            make.width.equalTo(200)
+            make.height.equalTo(40)
+        }
+
+        let datePicker = UIKitTutorial4DatePicker(label: labelForDatePicker)
+ 
+        let stackView = UIStackView()
+        stackView.addArrangedSubview(buttonforWebView)
+        stackView.addArrangedSubview(buttonforSearchView)
+        stackView.addArrangedSubview(button)
+        
+        stackView.addArrangedSubview(labelForPickerView)
+        stackView.addArrangedSubview(pickerView)
+        stackView.addArrangedSubview(labelForDatePicker)
+        stackView.addArrangedSubview(datePicker)
+ 
+        stackView.axis = .vertical
+        stackView.spacing = 16
+        stackView.distribution = .fillProportionally
+        stackView.alignment = .center
+        view.addSubview(stackView)
+  
+        // Sample standart constraints
+
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 12),
+            stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0),
+        ])
+    }
+     
+    @objc
+    func onAddSubView(){
+        let cmallVC = UIKitTutorialWebViewController()
+        cmallVC.modalPresentationStyle = .automatic
+        present(cmallVC, animated: true)
+    }
+    
 }

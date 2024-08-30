@@ -36,9 +36,17 @@ class UIKitTutorialNavigation : UINavigationController {
     @objc
     func openNewSearchView(){
         let searchVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UIKitTutorialSearchVC") as! UIKitTutorialSearchVC
-        searchVC.navigationItem.title = "search"
+        searchVC.navigationItem.title = "Search"
  
         self.pushViewController(searchVC, animated: true)
+
+    }
+    
+    @objc
+    func openNewWebView(){
+        let vc = UIKitTutorialWebViewController()
+        vc.navigationItem.title = "WebView"
+        self.pushViewController(vc, animated: true)
 
     }
 }

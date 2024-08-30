@@ -12,6 +12,9 @@
 		0931CC242C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC232C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift */; };
 		0931CC262C7FDBA900E637BC /* UIKitTutorial3.UIStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC252C7FDBA900E637BC /* UIKitTutorial3.UIStepper.swift */; };
 		0931CC282C7FDE5F00E637BC /* UIKitTutorialNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC272C7FDE5F00E637BC /* UIKitTutorialNavigation.swift */; };
+		0931CC2A2C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC292C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift */; };
+		0931CC2C2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */; };
+		0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */; };
 		0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */; };
 		0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */; };
 		0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */; };
@@ -36,6 +39,9 @@
 		0931CC232C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial3.UISwitch.swift; sourceTree = "<group>"; };
 		0931CC252C7FDBA900E637BC /* UIKitTutorial3.UIStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial3.UIStepper.swift; sourceTree = "<group>"; };
 		0931CC272C7FDE5F00E637BC /* UIKitTutorialNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorialNavigation.swift; sourceTree = "<group>"; };
+		0931CC292C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial4.UIDatePicker.swift; sourceTree = "<group>"; };
+		0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial4.UIPickerView.swift; sourceTree = "<group>"; };
+		0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorialWebViewController.swift; sourceTree = "<group>"; };
 		0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UILabel.swift; sourceTree = "<group>"; };
 		0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextView.swift; sourceTree = "<group>"; };
 		0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextField.swift; sourceTree = "<group>"; };
@@ -70,12 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09E252062C7D45CF0002D651 /* UIKit.Hints */ = {
+		09AF101C2C815157007EC9DC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				0931CC272C7FDE5F00E637BC /* UIKitTutorialNavigation.swift */,
 				09E252022C7D3B470002D651 /* UIKitTutorialViewController.swift */,
 				0984F2182C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift */,
+				0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		09E252062C7D45CF0002D651 /* UIKit.Hints */ = {
+			isa = PBXGroup;
+			children = (
+				09AF101C2C815157007EC9DC /* ViewControllers */,
 				09E251FC2C7D32110002D651 /* UIKitTutorial1.UIView.swift */,
 				09E252002C7D38440002D651 /* UIKitTutorial1.UIImageView.swift */,
 				09E252042C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift */,
@@ -87,6 +102,8 @@
 				0931CC212C7FDB1100E637BC /* UIKitTutorial3.UISlider.swift */,
 				0931CC232C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift */,
 				0931CC252C7FDBA900E637BC /* UIKitTutorial3.UIStepper.swift */,
+				0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */,
+				0931CC292C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift */,
 			);
 			path = UIKit.Hints;
 			sourceTree = "<group>";
@@ -260,17 +277,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0931CC2A2C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift in Sources */,
 				42EC93762C756A2100738735 /* ViewController.swift in Sources */,
 				0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */,
 				0931CC242C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift in Sources */,
 				0931CC262C7FDBA900E637BC /* UIKitTutorial3.UIStepper.swift in Sources */,
 				0931CC222C7FDB1100E637BC /* UIKitTutorial3.UISlider.swift in Sources */,
+				0931CC2C2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift in Sources */,
 				09E252032C7D3B470002D651 /* UIKitTutorialViewController.swift in Sources */,
 				42EC93722C756A2100738735 /* AppDelegate.swift in Sources */,
 				0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */,
 				09E251FD2C7D32110002D651 /* UIKitTutorial1.UIView.swift in Sources */,
 				09E251FF2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift in Sources */,
 				09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */,
+				0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */,
 				0931CC282C7FDE5F00E637BC /* UIKitTutorialNavigation.swift in Sources */,
 				0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */,
 				0931CC202C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift in Sources */,

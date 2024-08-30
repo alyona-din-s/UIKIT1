@@ -28,8 +28,8 @@ class UIKitTutorialSearchVC: UIViewController {
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search"
         navigationItem.searchController = searchController
-        definesPresentationContext = true
-        
+        navigationItem.hidesSearchBarWhenScrolling = false
+
         searchController.searchBar.delegate = self
         
         let notificationCenter = NotificationCenter.default
