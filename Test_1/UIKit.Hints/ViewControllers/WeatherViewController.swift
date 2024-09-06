@@ -45,8 +45,13 @@ class WeatherViewController : UIViewController {
     private func createItems(_ info : ItemInfo){
         
         labelCity = UILabel()
-        // Create UIStackView with labelCity, labelTemp, labelDescr, labelPeacks
-        // place it above scrollView
+        
+        //TODO: -  Home Task
+        
+//        1. Create UIStackView with labelCity, labelTemp, labelDescr, labelPeacks
+//        2. Place it above scrollView with Constraints (top,leading, trailing)
+//        3. Add Constraint (top) for UIScrollView or Constraint (bottom) for UIStackView
+//        4. Add any UIImageView on ScrollView
         
         
         scrollView = UIScrollView(frame: .zero)
