@@ -15,6 +15,7 @@
 		0931CC2A2C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC292C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift */; };
 		0931CC2C2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */; };
 		0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */; };
+		0957C9CB2C8A8426001FEAB6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */; };
 		0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */; };
 		0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */; };
 		0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */; };
@@ -42,6 +43,7 @@
 		0931CC292C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial4.UIDatePicker.swift; sourceTree = "<group>"; };
 		0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial4.UIPickerView.swift; sourceTree = "<group>"; };
 		0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorialWebViewController.swift; sourceTree = "<group>"; };
+		0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UILabel.swift; sourceTree = "<group>"; };
 		0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextView.swift; sourceTree = "<group>"; };
 		0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextField.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				0931CC272C7FDE5F00E637BC /* UIKitTutorialNavigation.swift */,
 				09E252022C7D3B470002D651 /* UIKitTutorialViewController.swift */,
+				0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */,
 				0984F2182C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift */,
 				0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */,
 			);
@@ -281,6 +284,7 @@
 				42EC93762C756A2100738735 /* ViewController.swift in Sources */,
 				0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */,
 				0931CC242C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift in Sources */,
+				0957C9CB2C8A8426001FEAB6 /* WeatherViewController.swift in Sources */,
 				0931CC262C7FDBA900E637BC /* UIKitTutorial3.UIStepper.swift in Sources */,
 				0931CC222C7FDB1100E637BC /* UIKitTutorial3.UISlider.swift in Sources */,
 				0931CC2C2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift in Sources */,

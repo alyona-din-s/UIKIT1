@@ -12,6 +12,7 @@ class UIKitTutorialNavigation : UINavigationController {
      
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         setDefaultViewController()
         navigationBar.barStyle = .default
 
@@ -20,17 +21,12 @@ class UIKitTutorialNavigation : UINavigationController {
     func setDefaultViewController(){
         
         // Sample init UIKitTutorialVC with code
-
 //        let vc = UIKitTutorialVC()
         
         // Sample init with StoryBoard
-
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UIKitTutorialVC") as! UIKitTutorialVC
-         
          vc.navigationItem.title = "Home"
-
         self.setViewControllers([vc], animated: true)
-
     }
     
     @objc
