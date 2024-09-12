@@ -21,11 +21,11 @@ class UIKitTutorialNavigation : UINavigationController {
     func setDefaultViewController(){
         
         // Sample init UIKitTutorialVC with code
-//        let vc = UIKitTutorialVC()
+        let vc = UIKitTableViewController()
         
         // Sample init with StoryBoard
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UIKitTutorialVC") as! UIKitTutorialVC
-         vc.navigationItem.title = "Home"
+//        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UIKitTutorialVC") as! UIKitTutorialVC
+//         vc.navigationItem.title = "Home"
         self.setViewControllers([vc], animated: true)
     }
     

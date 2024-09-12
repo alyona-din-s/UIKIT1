@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0909B3EB2C926BD70089BCA8 /* UIKitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0909B3EA2C926BD70089BCA8 /* UIKitTableViewController.swift */; };
 		0931CC202C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC1F2C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift */; };
 		0931CC222C7FDB1100E637BC /* UIKitTutorial3.UISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC212C7FDB1100E637BC /* UIKitTutorial3.UISlider.swift */; };
 		0931CC242C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC232C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0909B3EA2C926BD70089BCA8 /* UIKitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableViewController.swift; sourceTree = "<group>"; };
 		0931CC1F2C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial3.UIButton.swift; sourceTree = "<group>"; };
 		0931CC212C7FDB1100E637BC /* UIKitTutorial3.UISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial3.UISlider.swift; sourceTree = "<group>"; };
 		0931CC232C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial3.UISwitch.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */,
 				0984F2182C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift */,
 				0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */,
+				0909B3EA2C926BD70089BCA8 /* UIKitTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */,
 				0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */,
 				0931CC282C7FDE5F00E637BC /* UIKitTutorialNavigation.swift in Sources */,
+				0909B3EB2C926BD70089BCA8 /* UIKitTableViewController.swift in Sources */,
 				0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */,
 				0931CC202C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift in Sources */,
 				09E252052C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift in Sources */,

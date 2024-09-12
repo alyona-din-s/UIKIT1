@@ -11,8 +11,8 @@ class UIKitTutorial1ImageView: UIImageView {
     var subViewRect: UIView!
     
     init() {
-        let image = UIImage(systemName: "star.leadinghalf.filled")
-//        let image = UIImage(named: "img1")
+//        let image = UIImage(systemName: "star.leadinghalf.filled")
+        let image = UIImage(named: "img1")
         super.init(image: image)
         customInit()
     }
