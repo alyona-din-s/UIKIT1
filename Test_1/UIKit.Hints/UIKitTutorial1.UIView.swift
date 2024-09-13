@@ -8,8 +8,11 @@
 import UIKit
 import SnapKit
 
+class CustomSmallView: UIView, CustomDrawForView {
+    
+}
 
-class UIKitTutorial1View: UIView{
+class UIKitTutorial1View: UIView, CustomDrawForView {
  
     var subViewRect: UIView!
     var label: UILabel!
@@ -127,10 +130,30 @@ class UIKitTutorial1View: UIView{
             self.layer.opacity = 1
         })
     }
+     
     
-    func drawRect(startColor : UIColor, endColor: UIColor){
+    @objc
+    func onTapGesture(){
+        self.backgroundColor = .red
+    }
+    
+}
+
+
+
+protocol CustomDrawForView : UIView {
+    func drawRect(startColor : UIColor, endColor: UIColor)
+}
+
+
+extension CustomDrawForView {
+    
+    func drawRect(startColor : UIColor, endColor: UIColor) {
         
-        let context = UIGraphicsGetCurrentContext()!
+        guard  let context = UIGraphicsGetCurrentContext() else {
+            return
+        }
+        
         let colors = [startColor.cgColor, endColor.cgColor]
         
         let colorSpace = CGColorSpaceCreateDeviceRGB()
@@ -147,10 +170,5 @@ class UIKitTutorial1View: UIView{
                                    end: endPoint,
                                    options: [CGGradientDrawingOptions(rawValue: 0)])
     }
-    
-    @objc
-    func onTapGesture(){
-        self.backgroundColor = .red
-    }
-    
 }
+ 

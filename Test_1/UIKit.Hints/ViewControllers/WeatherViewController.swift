@@ -9,6 +9,7 @@ import UIKit
 
 struct ItemInfo {
     let name: String
+    let day: String
     let temp: Float
     let description: String
     let high : Float
@@ -17,6 +18,7 @@ struct ItemInfo {
     
     static func creatTestValues() -> ItemInfo {
         return ItemInfo(name: "New York",
+                        day: "Sunday",
                         temp: 21,
                         description: "clear",
                         high: 25,

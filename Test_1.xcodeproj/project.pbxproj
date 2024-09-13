@@ -17,6 +17,7 @@
 		0931CC2C2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */; };
 		0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */; };
 		0957C9CB2C8A8426001FEAB6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */; };
+		0959B9412C93BBCD0098580C /* UIKitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0959B9402C93BBCD0098580C /* UIKitTableViewCell.swift */; };
 		0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */; };
 		0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */; };
 		0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */; };
@@ -46,6 +47,7 @@
 		0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial4.UIPickerView.swift; sourceTree = "<group>"; };
 		0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorialWebViewController.swift; sourceTree = "<group>"; };
 		0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		0959B9402C93BBCD0098580C /* UIKitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableViewCell.swift; sourceTree = "<group>"; };
 		0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UILabel.swift; sourceTree = "<group>"; };
 		0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextView.swift; sourceTree = "<group>"; };
 		0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextField.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				0984F2182C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift */,
 				0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */,
 				0909B3EA2C926BD70089BCA8 /* UIKitTableViewController.swift */,
+				0959B9402C93BBCD0098580C /* UIKitTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				0931CC202C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift in Sources */,
 				09E252052C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift in Sources */,
 				42EC93742C756A2100738735 /* SceneDelegate.swift in Sources */,
+				0959B9412C93BBCD0098580C /* UIKitTableViewCell.swift in Sources */,
 				0984F21B2C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
