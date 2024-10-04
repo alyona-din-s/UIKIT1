@@ -23,6 +23,7 @@ class UIKitTutorialVC: UIViewController{
         super.viewDidLoad()
 
         addMySubviews4Tutorial4()
+        checkStorages()
     }
     
     deinit {
@@ -35,6 +36,16 @@ class UIKitTutorialVC: UIViewController{
 
     }
 
+    func checkStorages(){
+        
+        SafeStorageManager.sh.saveUserEneterData()
+
+        SafeStorageManager.sh.updateUserEnterData()
+
+        SafeStorageManager.sh.getUserEneterData()
+ 
+
+    }
  
    func addMySubviews4Tutorial1(){
         
@@ -125,6 +136,12 @@ class UIKitTutorialVC: UIViewController{
     @objc
     func onNextViewController(){
         let nc = navigationController as? UIKitTutorialNavigation
+        
+        
+//        navigationController?.viewControllers
+        
+        // HomeViewController, SearchVIewController DetailViewController
+        
         nc?.openNewSearchView()
     }
  

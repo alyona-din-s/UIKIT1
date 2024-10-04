@@ -26,25 +26,29 @@ class UIKitTableViewCell: UITableViewCell {
     }
     
     func addCustomViews(){
-        img2.frame.size = CGSize( width: 40, height: 40)
         label1.font = UIFont(name: "Helvetica", size: 16)
         label2.font = UIFont(name: "Helvetica", size: 14)
         label3.font = UIFont(name: "Helvetica", size: 14)
         img2.frame.size = CGSize( width: 80, height: 2)
 
-        let stackView = UIStackView(arrangedSubviews: [label1,img1,label2,img1,label3])
+        let stackView = UIStackView(arrangedSubviews: [label1,img1,label2,img2,label3])
         stackView.axis = .horizontal
-        stackView.alignment = .leading
-        stackView.distribution = .fill
+        stackView.alignment = .center
+        stackView.distribution = .fillProportionally
         contentView.addSubview(stackView)
-
+        img1.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            img1.heightAnchor.constraint(equalToConstant: 40),
+            img1.widthAnchor.constraint(equalToConstant: 40)
+        ])
+        img1.clipsToBounds = true
         
         stackView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 8),
+            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
+            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
         ])
     }
     

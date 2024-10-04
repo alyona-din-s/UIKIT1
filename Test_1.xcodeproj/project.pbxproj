@@ -22,6 +22,9 @@
 		0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */; };
 		0984F20A2C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */; };
 		0984F21B2C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2182C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift */; };
+		09DA3BB72CAE07D000224BCE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DA3BB62CAE07D000224BCE /* StorageManager.swift */; };
+		09DA3BBA2CAE115A00224BCE /* SafeStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DA3BB82CAE114A00224BCE /* SafeStorageManager.swift */; };
+		09DA3BBD2CAE14B900224BCE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DA3BBC2CAE14B100224BCE /* Model.swift */; };
 		09E251FD2C7D32110002D651 /* UIKitTutorial1.UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E251FC2C7D32110002D651 /* UIKitTutorial1.UIView.swift */; };
 		09E251FF2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E251FE2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift */; };
 		09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E252002C7D38440002D651 /* UIKitTutorial1.UIImageView.swift */; };
@@ -52,6 +55,9 @@
 		0984F2072C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextView.swift; sourceTree = "<group>"; };
 		0984F2092C7E866D00D2E8E6 /* UIKitTutorial2.UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UITextField.swift; sourceTree = "<group>"; };
 		0984F2182C7EADE700D2E8E6 /* UIKitTutorialSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIKitTutorialSearchViewController.swift; sourceTree = "<group>"; };
+		09DA3BB62CAE07D000224BCE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		09DA3BB82CAE114A00224BCE /* SafeStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeStorageManager.swift; sourceTree = "<group>"; };
+		09DA3BBC2CAE14B100224BCE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		09E251FC2C7D32110002D651 /* UIKitTutorial1.UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIView.swift; sourceTree = "<group>"; };
 		09E251FE2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIScrollView.swift; sourceTree = "<group>"; };
 		09E252002C7D38440002D651 /* UIKitTutorial1.UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial1.UIImageView.swift; sourceTree = "<group>"; };
@@ -94,6 +100,16 @@
 				0959B9402C93BBCD0098580C /* UIKitTableViewCell.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		09DA3BBB2CAE117300224BCE /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				09DA3BBC2CAE14B100224BCE /* Model.swift */,
+				09DA3BB62CAE07D000224BCE /* StorageManager.swift */,
+				09DA3BB82CAE114A00224BCE /* SafeStorageManager.swift */,
+			);
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		09E252062C7D45CF0002D651 /* UIKit.Hints */ = {
@@ -141,6 +157,7 @@
 				42EC93712C756A2100738735 /* AppDelegate.swift */,
 				42EC93732C756A2100738735 /* SceneDelegate.swift */,
 				42EC93752C756A2100738735 /* ViewController.swift */,
+				09DA3BBB2CAE117300224BCE /* Storage */,
 				09E252062C7D45CF0002D651 /* UIKit.Hints */,
 				42EC93772C756A2100738735 /* Main.storyboard */,
 				42EC937A2C756A2200738735 /* Assets.xcassets */,
@@ -287,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0931CC2A2C810B6200E637BC /* UIKitTutorial4.UIDatePicker.swift in Sources */,
+				09DA3BBA2CAE115A00224BCE /* SafeStorageManager.swift in Sources */,
 				42EC93762C756A2100738735 /* ViewController.swift in Sources */,
 				0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */,
 				0931CC242C7FDB7700E637BC /* UIKitTutorial3.UISwitch.swift in Sources */,
@@ -301,8 +319,10 @@
 				09E251FF2C7D37640002D651 /* UIKitTutorial1.UIScrollView.swift in Sources */,
 				09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */,
 				0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */,
+				09DA3BB72CAE07D000224BCE /* StorageManager.swift in Sources */,
 				0931CC282C7FDE5F00E637BC /* UIKitTutorialNavigation.swift in Sources */,
 				0909B3EB2C926BD70089BCA8 /* UIKitTableViewController.swift in Sources */,
+				09DA3BBD2CAE14B900224BCE /* Model.swift in Sources */,
 				0984F2082C7E865E00D2E8E6 /* UIKitTutorial2.UITextView.swift in Sources */,
 				0931CC202C7FDAC000E637BC /* UIKitTutorial3.UIButton.swift in Sources */,
 				09E252052C7D3C400002D651 /* UIKitTutorial1.UIStackView.swift in Sources */,
