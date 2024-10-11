@@ -38,13 +38,20 @@ class UIKitTutorialVC: UIViewController{
 
     func checkStorages(){
         
+        let appBuildNumber = InfoStorageManager.readVersionInfoFromInfo()
+        print("appBuildNumber \(appBuildNumber)")
+
+        let info = User.encodeSample() ?? Data()
+        FileStorageManager.writeToFile(info: info, fileName: "info")
+        FileStorageManager.readFromFile("info") { user in
+            if let user = user  {
+                print("+ ", user.firstName)
+            }
+        }
+
         SafeStorageManager.sh.saveUserEneterData()
-
         SafeStorageManager.sh.updateUserEnterData()
-
         SafeStorageManager.sh.getUserEneterData()
- 
-
     }
  
    func addMySubviews4Tutorial1(){

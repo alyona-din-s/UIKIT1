@@ -86,8 +86,6 @@ class StorageManager {
         //write
         let data = User.encodeSample()
         defaults.set(data, forKey: "userData")
-
-        
         //read
         if let dataFromUserDefaults = defaults.object(forKey:"userData") as? Data {
             let user = User.decodeFrom(data: dataFromUserDefaults)
