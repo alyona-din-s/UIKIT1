@@ -18,6 +18,7 @@
 		0931CC2C2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */; };
 		0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */; };
 		094AE50E2CB8A03C004B0758 /* InfoStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094AE50D2CB8A030004B0758 /* InfoStorageManager.swift */; };
+		094EE88B2CC9BE88002876D4 /* GCDSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 094EE88A2CC9BE88002876D4 /* GCDSample.swift */; };
 		0957C9CB2C8A8426001FEAB6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */; };
 		0959B9412C93BBCD0098580C /* UIKitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0959B9402C93BBCD0098580C /* UIKitTableViewCell.swift */; };
 		0984F2062C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */; };
@@ -53,6 +54,7 @@
 		0931CC2B2C81158B00E637BC /* UIKitTutorial4.UIPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial4.UIPickerView.swift; sourceTree = "<group>"; };
 		0931CC2F2C811BE400E637BC /* UIKitTutorialWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorialWebViewController.swift; sourceTree = "<group>"; };
 		094AE50D2CB8A030004B0758 /* InfoStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoStorageManager.swift; sourceTree = "<group>"; };
+		094EE88A2CC9BE88002876D4 /* GCDSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCDSample.swift; sourceTree = "<group>"; };
 		0957C9CA2C8A8426001FEAB6 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0959B9402C93BBCD0098580C /* UIKitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTableViewCell.swift; sourceTree = "<group>"; };
 		0984F2052C7E862D00D2E8E6 /* UIKitTutorial2.UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitTutorial2.UILabel.swift; sourceTree = "<group>"; };
@@ -92,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094EE8892CC9BE63002876D4 /* Threads */ = {
+			isa = PBXGroup;
+			children = (
+				094EE88A2CC9BE88002876D4 /* GCDSample.swift */,
+			);
+			path = Threads;
+			sourceTree = "<group>";
+		};
 		09AF101C2C815157007EC9DC /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,6 +173,7 @@
 				42EC93712C756A2100738735 /* AppDelegate.swift */,
 				42EC93732C756A2100738735 /* SceneDelegate.swift */,
 				42EC93752C756A2100738735 /* ViewController.swift */,
+				094EE8892CC9BE63002876D4 /* Threads */,
 				09DA3BBB2CAE117300224BCE /* Storage */,
 				09E252062C7D45CF0002D651 /* UIKit.Hints */,
 				42EC93772C756A2100738735 /* Main.storyboard */,
@@ -327,6 +338,7 @@
 				09E252012C7D38440002D651 /* UIKitTutorial1.UIImageView.swift in Sources */,
 				0931CC302C811BE400E637BC /* UIKitTutorialWebViewController.swift in Sources */,
 				09DA3BB72CAE07D000224BCE /* UserDefaultsManager.swift in Sources */,
+				094EE88B2CC9BE88002876D4 /* GCDSample.swift in Sources */,
 				0931CC282C7FDE5F00E637BC /* UIKitTutorialNavigation.swift in Sources */,
 				0909B3EB2C926BD70089BCA8 /* UIKitTableViewController.swift in Sources */,
 				09DA3BBD2CAE14B900224BCE /* Model.swift in Sources */,

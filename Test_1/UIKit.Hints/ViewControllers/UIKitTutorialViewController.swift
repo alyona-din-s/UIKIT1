@@ -22,8 +22,9 @@ class UIKitTutorialVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        addMySubviews4Tutorial4()
-        checkStorages()
+        GCDSample.sample2()
+//        addMySubviews4Tutorial4()
+//        checkStorages()
     }
     
     deinit {
